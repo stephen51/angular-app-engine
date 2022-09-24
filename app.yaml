@@ -1,0 +1,10 @@
+runtime: nodejs12
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: angular-app-engine/index.html
+  upload: angular-app-engine/index.html
+
+- url: /
+  static_dir: angular-app-engine

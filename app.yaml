@@ -1,10 +1,8 @@
-runtime: nodejs12
-api_version: 1
-threadsafe: true
+runtime: nodejs16
 handlers:
 - url: /
-  static_files: angular-app-engine/index.html
-  upload: angular-app-engine/index.html
+  static_files: dist/angular-app-engine/index.html
+  upload: dist/angular-app-engine/index.html
 
 - url: /
-  static_dir: angular-app-engine
+  static_dir: dist/angular-app-engine
